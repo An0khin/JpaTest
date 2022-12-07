@@ -1,7 +1,7 @@
 package com.home.model;
 
-import javax.persistence.*;
-
+//import javax.persistence.*;
+import jakarta.persistence.*;
 @Entity
 @Table(name = "People")
 public class Person {
@@ -15,8 +15,7 @@ public class Person {
     public Person() {
     }
 
-    public Person(Integer id, String name) {
-        this.Id = id;
+    public Person(String name) {
         this.name = name;
     }
 

@@ -10,7 +10,7 @@ public class PersonService {
     private PersonRepository repository;
 
     public void test() {
-        Person newPerson = new Person(1, "David");
+        Person newPerson = new Person("Bob");
         repository.save(newPerson);
 
         repository.findAll().stream().forEach(System.out::println);
